@@ -22,3 +22,13 @@ func main() {
 		panic(err)
 	}
 }
+
+type start struct{
+	ctx context.Context
+}
+
+func (start int) Get(ctx context.Context) error{
+	if start, err != nil{
+		return err
+	}
+}
