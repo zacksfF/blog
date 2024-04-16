@@ -6,6 +6,13 @@ import (
 	"github.com/neo4j/neo4j-go-driver/v5/neo4j"
 )
 
+
+type person struct{
+	age int16
+	name, lastname string
+	school string
+}
+
 func main() {
 	ctx := context.Background()
 	// URI examples: "neo4j://localhost", "neo4j+s://xxx.databases.neo4j.io"
